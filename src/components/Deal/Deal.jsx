@@ -1,31 +1,19 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
 
-const Deal = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    getData();
-  }, []);
 
-  const getData = async () => {
-    const { data } = await axios.get(
-        'https://dummyjson.com/products?limit=6'
-    );
-    console.log(data.products);
-    setProducts(data.products);
-  };
+const Deal = ({products}) => {
+
   return (
     <div className="max-w-[1500px] mx-auto my-6">
       <div className="text-center">
-        <h1 className="text-[40px] font-bold mb-3">Best Deal</h1>
-        <p className="mb-4 text-xl">Just For You</p>
+        <h1 className="text-2xl md:text-[40px] font-bold mb-3">Best Deal</h1>
+        <p className="mb-4 text-lg md:text-xl">Just For You</p>
       </div>
-      <div className="grid grid-cols-6 gap-2">
+      <div className="px-4 lg:px-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-2">
         {products.map((product) => (
           <div className="" key={product.id}>
             <div className="bg-gray-300 px-12 rounded-lg">
               <div className="flex justify-center mb-6">
-                <span className="bg-red-500 py-[2px] px-4 text-white ">
+                <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
                   {product?.discountPercentage} Off
                 </span>
               </div>
@@ -39,14 +27,14 @@ const Deal = () => {
             <div className="flex flex-col items-center justify-center mt-4">
               <h1 className="">{product?.title}</h1>
               <p className="">{product?.price *3000} MMK</p>
-              <p className=" line-through">{product?.price *3000 + ((product?.discountPercentage*3000) / 100)} MMK</p>
+              <p className="line-through text-red-500">{product?.price *3000 + ((product?.discountPercentage*3000) / 100)} MMK</p>
               <div className="flex space-x-2 items-center">
                 <div className="">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="w-4 h-4 text-yellow-500"
+                    className="w-4 h-4 text-orange-500"
                   >
                     <path
                       fillRule="evenodd"
@@ -56,7 +44,7 @@ const Deal = () => {
                   </svg>
                 </div>
                 <div className="">
-                  <span className=" text-yellow-500">600 Points</span>
+                  <span className=" text-orange-500">600 Points</span>
                 </div>
               </div>
             </div>
@@ -65,7 +53,7 @@ const Deal = () => {
       </div>
 
       <div className="flex justify-center my-6">
-        <button className="flex px-20 py-2 items-center space-x-2 bg-gray-300 rounded-2xl">
+        <button className="flex px-20 py-2 items-center space-x-2 bg-gray-300 hover:bg-gray-400 hover:text-white rounded-2xl">
             <span className="">View More</span>
             <span className="">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
