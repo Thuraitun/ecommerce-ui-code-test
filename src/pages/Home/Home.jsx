@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Deal, Hero, Navbar, Release } from '../../components';
+import { Deal, Footer, Hero, Navbar, Release, Section } from '../../components';
 import axios from 'axios';
 
 const Home = () => {
@@ -27,13 +27,14 @@ const Home = () => {
     <div>
       {
         isLoading ? <div>Loading...</div> :  (
-          <>
-           <Navbar />
-      
-           <Deal products={products} />
-           <Hero />
-           <Release/>
-          </>
+          <div className=''>
+            <Navbar />
+            <Deal products={products} />
+            <Hero />
+            <Release/>
+            <Section products={products} />
+            <Footer />
+          </div>
         )
       }
   
