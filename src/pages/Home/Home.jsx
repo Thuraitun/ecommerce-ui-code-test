@@ -29,11 +29,13 @@ const Home = () => {
         isLoading ? <div>Loading...</div> :  (
           <div className=''>
             <Navbar />
-            <Deal products={products} />
-            <Hero />
-            <Release/>
-            <Section products={products} />
-            <Footer />
+            <div className="max-w-[1440px] mx-auto">
+              <Deal products={products} />
+              <Hero />
+              <Release/>
+              <Section products={products} />
+              <Footer />
+            </div>
           </div>
         )
       }
