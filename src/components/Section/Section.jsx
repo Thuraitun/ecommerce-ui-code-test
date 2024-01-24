@@ -8,27 +8,28 @@ import deal_3 from "../../assets/image/vape_4.png";
 const Section = ({ products }) => {
   return (
     <div className="my-10">
-      <div className="px-4 py-6 relative">
-        <img
-          className="rounded-lg object-cover h-[300px] w-full"
-          src="https://t3.ftcdn.net/jpg/01/08/81/98/360_F_108819818_1Schnn0A0GpkHo2UOxrfXOLx7OUFH8P8.jpg"
-          alt=""
-        />
-        <div className="absolute z-20 bottom-16 right-20 md:bottom-20 md:right-32">
-          <div className="text-white text-center space-y-4">
-            <h1 className="text-3xl font-bold">Try New Flavor</h1>
-            <p className="">Citrus Monster</p>
-            <div className="flex justify-center">
-              <button className="py-2 px-3 border border-white bg-slate-900 opacity-[0.7] rounded-xl">
-                View
-              </button>
+        <div className="px-4 py-6 relative">
+          <img
+            className="rounded-lg object-cover h-[300px] w-full"
+            src="https://t3.ftcdn.net/jpg/01/08/81/98/360_F_108819818_1Schnn0A0GpkHo2UOxrfXOLx7OUFH8P8.jpg"
+            alt=""
+          />
+          <div className="absolute z-20 bottom-16 right-20 md:bottom-20 md:right-32">
+            <div className="text-white text-center space-y-4">
+              <h1 className="text-3xl font-bold">Try New Flavor</h1>
+              <p className="">Citrus Monster</p>
+              <div className="flex justify-center">
+                <button className="py-2 px-3 border border-white bg-slate-900 opacity-[0.7] rounded-xl">
+                  View
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+      
 
-      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[380px] rounded-lg mb-4">
+      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[350px] rounded-lg mb-4">
         <div className="md:flex h-[300px]">
           <div className="w-full md:w-1/4">
             <div className="flex justify-between items-center text-white">
@@ -43,75 +44,64 @@ const Section = ({ products }) => {
           </div>
           <div className="w-full md:w-3/4 text-white ">
             <div className="">
-            <Carousel
-              additionalTransfrom={0}
-              arrows
-              autoPlaySpeed={3000}
-              centerMode={false}
-              className=""
-              containerClass="container"
-              dotListClass=""
-              draggable
-              focusOnSelect={false}
-              infinite={false}
-              itemClass=""
-              keyBoardControl
-              minimumTouchDrag={80}
-              pauseOnHover
-              renderArrowsWhenDisabled={false}
-              renderButtonGroupOutside={true}
-              renderDotsOutside={false}
-              spacing={16}
-              responsive={{
-                desktop: {
-                  breakpoint: {
-                    max: 3000,
-                    min: 1024,
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                containerClass="container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite={false}
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                pauseOnHover
+                renderArrowsWhenDisabled={false}
+                renderButtonGroupOutside={true}
+                renderDotsOutside={false}
+                spacing={16}
+                responsive={{
+                  desktop: {
+                    breakpoint: {
+                      max: 3000,
+                      min: 1024,
+                    },
+                    items: 4,
+                    partialVisibilityGutter: 40,
                   },
-                  items: 4,
-                  partialVisibilityGutter: 40,
-                },
-                mobile: {
-                  breakpoint: {
-                    max: 464,
-                    min: 0,
+                  mobile: {
+                    breakpoint: {
+                      max: 464,
+                      min: 0,
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 1,
-                  partialVisibilityGutter: 30,
-                },
-                tablet: {
-                  breakpoint: {
-                    max: 1024,
-                    min: 464,
+                  tablet: {
+                    breakpoint: {
+                      max: 1024,
+                      min: 464,
+                    },
+                    items: 2,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 2,
-                  partialVisibilityGutter: 30,
-                },
-              }}
-              rewind={false}
-              rewindWithAnimation={false}
-              rtl={false}
-              shouldResetAutoplay
-              showDots={false}
-              sliderClass=""
-              slidesToSlide={2}
-              swipeable
-
-            >
-           
+                }}
+                rewind={false}
+                rewindWithAnimation={false}
+                rtl={false}
+                shouldResetAutoplay
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={2}
+                swipeable
+              >
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -142,17 +132,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -183,17 +164,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_2}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_2} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -224,17 +196,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -265,17 +228,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -306,17 +260,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -344,14 +289,13 @@ const Section = ({ products }) => {
                     </div>
                   </div>
                 </div>
-
-            </Carousel>
+              </Carousel>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[380px] rounded-lg mb-4">
+      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[350px] rounded-lg mb-4">
         <div className="md:flex h-[300px]">
           <div className="w-full md:w-1/4">
             <div className="flex justify-between items-center text-white">
@@ -366,75 +310,64 @@ const Section = ({ products }) => {
           </div>
           <div className="w-full md:w-3/4 text-white ">
             <div className="">
-            <Carousel
-              additionalTransfrom={0}
-              arrows
-              autoPlaySpeed={3000}
-              centerMode={false}
-              className=""
-              containerClass="container"
-              dotListClass=""
-              draggable
-              focusOnSelect={false}
-              infinite={false}
-              itemClass=""
-              keyBoardControl
-              minimumTouchDrag={80}
-              pauseOnHover
-              renderArrowsWhenDisabled={false}
-              renderButtonGroupOutside={true}
-              renderDotsOutside={false}
-              spacing={16}
-              responsive={{
-                desktop: {
-                  breakpoint: {
-                    max: 3000,
-                    min: 1024,
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                containerClass="container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite={false}
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                pauseOnHover
+                renderArrowsWhenDisabled={false}
+                renderButtonGroupOutside={true}
+                renderDotsOutside={false}
+                spacing={16}
+                responsive={{
+                  desktop: {
+                    breakpoint: {
+                      max: 3000,
+                      min: 1024,
+                    },
+                    items: 4,
+                    partialVisibilityGutter: 40,
                   },
-                  items: 4,
-                  partialVisibilityGutter: 40,
-                },
-                mobile: {
-                  breakpoint: {
-                    max: 464,
-                    min: 0,
+                  mobile: {
+                    breakpoint: {
+                      max: 464,
+                      min: 0,
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 1,
-                  partialVisibilityGutter: 30,
-                },
-                tablet: {
-                  breakpoint: {
-                    max: 1024,
-                    min: 464,
+                  tablet: {
+                    breakpoint: {
+                      max: 1024,
+                      min: 464,
+                    },
+                    items: 2,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 2,
-                  partialVisibilityGutter: 30,
-                },
-              }}
-              rewind={false}
-              rewindWithAnimation={false}
-              rtl={false}
-              shouldResetAutoplay
-              showDots={false}
-              sliderClass=""
-              slidesToSlide={2}
-              swipeable
-
-            >
-           
+                }}
+                rewind={false}
+                rewindWithAnimation={false}
+                rtl={false}
+                shouldResetAutoplay
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={2}
+                swipeable
+              >
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -465,17 +398,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -506,17 +430,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_2}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_2} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -547,17 +462,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -588,17 +494,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -629,17 +526,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -667,14 +555,13 @@ const Section = ({ products }) => {
                     </div>
                   </div>
                 </div>
-
-            </Carousel>
+              </Carousel>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[380px] rounded-lg mb-4">
+      <div className="mx-4 py-6 relative bg-black h-[700px] md:h-[350px] rounded-lg mb-4">
         <div className="md:flex h-[300px]">
           <div className="w-full md:w-1/4">
             <div className="flex justify-between items-center text-white">
@@ -689,75 +576,64 @@ const Section = ({ products }) => {
           </div>
           <div className="w-full md:w-3/4 text-white ">
             <div className="">
-            <Carousel
-              additionalTransfrom={0}
-              arrows
-              autoPlaySpeed={3000}
-              centerMode={false}
-              className=""
-              containerClass="container"
-              dotListClass=""
-              draggable
-              focusOnSelect={false}
-              infinite={false}
-              itemClass=""
-              keyBoardControl
-              minimumTouchDrag={80}
-              pauseOnHover
-              renderArrowsWhenDisabled={false}
-              renderButtonGroupOutside={true}
-              renderDotsOutside={false}
-              spacing={16}
-              responsive={{
-                desktop: {
-                  breakpoint: {
-                    max: 3000,
-                    min: 1024,
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                containerClass="container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite={false}
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                pauseOnHover
+                renderArrowsWhenDisabled={false}
+                renderButtonGroupOutside={true}
+                renderDotsOutside={false}
+                spacing={16}
+                responsive={{
+                  desktop: {
+                    breakpoint: {
+                      max: 3000,
+                      min: 1024,
+                    },
+                    items: 4,
+                    partialVisibilityGutter: 40,
                   },
-                  items: 4,
-                  partialVisibilityGutter: 40,
-                },
-                mobile: {
-                  breakpoint: {
-                    max: 464,
-                    min: 0,
+                  mobile: {
+                    breakpoint: {
+                      max: 464,
+                      min: 0,
+                    },
+                    items: 1,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 1,
-                  partialVisibilityGutter: 30,
-                },
-                tablet: {
-                  breakpoint: {
-                    max: 1024,
-                    min: 464,
+                  tablet: {
+                    breakpoint: {
+                      max: 1024,
+                      min: 464,
+                    },
+                    items: 2,
+                    partialVisibilityGutter: 30,
                   },
-                  items: 2,
-                  partialVisibilityGutter: 30,
-                },
-              }}
-              rewind={false}
-              rewindWithAnimation={false}
-              rtl={false}
-              shouldResetAutoplay
-              showDots={false}
-              sliderClass=""
-              slidesToSlide={2}
-              swipeable
-
-            >
-           
+                }}
+                rewind={false}
+                rewindWithAnimation={false}
+                rtl={false}
+                shouldResetAutoplay
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={2}
+                swipeable
+              >
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -788,17 +664,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -829,17 +696,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_2}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_2} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -870,17 +728,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -911,17 +760,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -952,17 +792,8 @@ const Section = ({ products }) => {
 
                 <div className="m-1">
                   <div className="bg-gray-300 px-12 rounded-lg">
-                    <div className="flex justify-center mb-6">
-                      <span className="bg-red-500 py-[2px] px-4 rounded-b-md text-white ">
-                        50% Off
-                      </span>
-                    </div>
                     <div className="">
-                      <img
-                        className="w-full h-[150px] object-cover"
-                        src={deal_3}
-                        alt=""
-                      />
+                      <img className="w-full h-[150px]" src={deal_3} alt="" />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-center mt-4">
@@ -990,8 +821,7 @@ const Section = ({ products }) => {
                     </div>
                   </div>
                 </div>
-
-            </Carousel>
+              </Carousel>
             </div>
           </div>
         </div>
