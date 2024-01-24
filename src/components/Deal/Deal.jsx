@@ -1,5 +1,5 @@
 import deal from "../../assets/image/vape_1.png";
-import deal_1 from "../../assets/image/vape_2.png";
+// import deal_3 from "../../assets/image/vape_2.png";
 import deal_2 from "../../assets/image/vape_3.png";
 import deal_3 from "../../assets/image/vape_4.png";
 
@@ -10,6 +10,7 @@ const Deal = ({ products }) => {
         <h1 className="text-2xl md:text-[40px] font-bold mb-3">Best Deal</h1>
         <p className="mb-4 text-lg md:text-xl">Just For You</p>
       </div>
+
       <div className="px-4 lg:px-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-2">
         <div className="">
           <div className="bg-gray-300 px-12 rounded-lg">
@@ -19,7 +20,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
@@ -56,7 +57,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal_1} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal_3} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
@@ -93,7 +94,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal_2} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal_2} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
@@ -130,7 +131,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal_3} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal_3} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
@@ -167,7 +168,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
@@ -204,7 +205,7 @@ const Deal = ({ products }) => {
               </span>
             </div>
             <div className="">
-              <img className="w-full h-[150px]" src={deal_1} alt="" />
+              <img className="w-full h-[150px] object-cover" src={deal_3} alt="" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-center mt-4">
