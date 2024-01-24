@@ -6,3 +6,8 @@
 /* image {
     background: url("https://xtrasure.store/cdn/shop/files/iPhone_15_Pro_14a9bd1a-10be-4212-859f-b6599436ff57.webp?v=1702778145&width=2000");
 } */
+
+.react-multiple-carousel__arrow react-multiple-carousel__arrow--right {
+    background: red;
+   
+}

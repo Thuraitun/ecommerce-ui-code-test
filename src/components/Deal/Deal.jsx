@@ -1,9 +1,8 @@
 import deal from "../../assets/image/vape_1.png";
-// import deal_3 from "../../assets/image/vape_2.png";
 import deal_2 from "../../assets/image/vape_3.png";
 import deal_3 from "../../assets/image/vape_4.png";
 
-const Deal = ({ products }) => {
+const Deal = () => {
   return (
     <div className="my-6">
       <div className="text-center">
